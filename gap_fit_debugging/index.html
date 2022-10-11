@@ -129,6 +129,39 @@
     
     
     
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
     
       <div class="md-header__source">
         <a href="https://github.com/kermodegroup/wiki" title="Go to repository" class="md-source" data-md-component="source">
@@ -599,7 +632,7 @@
   </a>
 
 
-<div id="mkdocs-encrypted-content" style="display:none">tGiVHgYtchrVJXwSatW3KA==;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;^</div>
+<div id="mkdocs-encrypted-content" style="display:none">agOxb1Fe4uVThgUpS9IHiQ==;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;^</div>
 <div id="mkdocs-decrypted-content">
     <form id="mkdocs-decrypt-form">
         <h1>This content is protected with AES encryption. </h1>
