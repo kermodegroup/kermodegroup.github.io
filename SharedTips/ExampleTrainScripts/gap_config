@@ -1,0 +1,38 @@
+verbosity = VERBOSE 
+mpi_print_all = F 
+at_file = training_structures.xyz
+gp_file = trained_gap/InP_GAP.xml 
+export_covariance=T 
+default_sigma = {0.001 0.03 0.001 0} 
+
+openmp_chunk_size = 1000
+energy_parameter_name = energy 
+force_parameter_name = forces 
+stress_parameter_name = stress 
+sparse_jitter = 1.0e-8 
+
+gap = {{
+    distance_2b add_species = T
+        cutoff_transition_width = 0.5 
+        theta_uniform = 0.16 
+        covariance_type = ard_se 
+        delta = 1.0
+        n_sparse = 40 
+        cutoff = 10.0 
+        sparse_method = uniform}:{
+    soap add_species = T 
+        l_max = 6
+        n_max = 12   
+        nu_R = 2 
+        atom_sigma = 0.34 
+        zeta = 4 
+        cutoff_transition_width = 0.5 
+        central_weight = 1.0 
+        covariance_type = dot_product 
+        delta = 1.0
+        n_sparse = 2000 
+        cutoff = 6.0
+        sparse_method = cur_points}}
+
+
+dryrun=T
