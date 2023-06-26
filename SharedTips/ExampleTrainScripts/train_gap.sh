@@ -1,10 +1,9 @@
 #!/bin/sh
-#SBATCH --time=00:10:00
-#SBATCH --nodes=1
-#SBATCH --ntasks-per-node=1
-#SBATCH --cpus-per-task=48
+#SBATCH --time=00:40:00
+#SBATCH --nodes=3
+#SBATCH --ntasks-per-node=6
+#SBATCH --cpus-per-task=8
 #SBATCH --mem-per-cpu=3700
-#SBATCH --partition=devel
 
 
 # Avon
