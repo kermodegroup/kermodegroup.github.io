@@ -33,6 +33,3 @@ gap = {{
         n_sparse = 2000 
         cutoff = 6.0
         sparse_method = cur_points}}
-
-
-dryrun=T
