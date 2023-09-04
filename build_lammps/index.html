@@ -9,25 +9,25 @@
       
       
       
-        <link rel="prev" href="../../../FPS/user-guide/">
+        <link rel="prev" href="../archer2/">
       
       
-        <link rel="next" href="../../../SharedTips/AtomModel_tips/">
+        <link rel="next" href="../cluster/">
       
       
-      <link rel="icon" href="../../../assets/images/favicon.ico">
+      <link rel="icon" href="../assets/images/favicon.ico">
       <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.2.7">
     
     
       
-        <title>[Protected] Sparse Points: - James Kermode's Research Group Wiki</title>
+        <title>[Protected] Build LAMMPS for use with Python into a virtual environment - James Kermode's Research Group Wiki</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.046329b4.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.046329b4.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.85d0ee34.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.85d0ee34.min.css">
       
       
 
@@ -46,7 +46,7 @@
       
     
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -75,7 +75,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#sparse-points" class="md-skip">
+        <a href="#build-lammps-for-use-with-python-into-a-virtual-environment" class="md-skip">
           Skip to content
         </a>
       
@@ -91,9 +91,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="James Kermode&#39;s Research Group Wiki" class="md-header__button md-logo" aria-label="James Kermode's Research Group Wiki" data-md-component="logo">
+    <a href=".." title="James Kermode&#39;s Research Group Wiki" class="md-header__button md-logo" aria-label="James Kermode's Research Group Wiki" data-md-component="logo">
       
-  <img src="../../../assets/images/logo.png" alt="logo">
+  <img src="../assets/images/logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              [Protected] Sparse Points:
+              [Protected] Build LAMMPS for use with Python into a virtual environment
             
           </span>
         </div>
@@ -220,9 +220,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="James Kermode&#39;s Research Group Wiki" class="md-nav__button md-logo" aria-label="James Kermode's Research Group Wiki" data-md-component="logo">
+    <a href=".." title="James Kermode&#39;s Research Group Wiki" class="md-nav__button md-logo" aria-label="James Kermode's Research Group Wiki" data-md-component="logo">
       
-  <img src="../../../assets/images/logo.png" alt="logo">
+  <img src="../assets/images/logo.png" alt="logo">
 
     </a>
     James Kermode's Research Group Wiki
@@ -248,7 +248,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href=".." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -267,7 +267,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../CASTEP/" class="md-nav__link">
+      <a href="../CASTEP/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -286,7 +286,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../archer2/" class="md-nav__link">
+      <a href="../archer2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -303,9 +303,29 @@
       
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../../build_lammps/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    [Protected] Build LAMMPS for use with Python into a virtual environment
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -314,6 +334,33 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#building-on-scrtp-nodes" class="md-nav__link">
+    Building on SCRTP nodes
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -324,11 +371,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cluster/" class="md-nav__link">
+      <a href="../cluster/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    [Protected] Cluster
+    Cluster
   </span>
   
 
@@ -343,11 +390,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../concur/" class="md-nav__link">
+      <a href="../concur/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    [Protected] Concur
+    Concur
   </span>
   
 
@@ -362,11 +409,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../gap_fit_debugging/" class="md-nav__link">
+      <a href="../gap_fit_debugging/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    [Protected] Gap Fit Debugging
+    Gap Fit Debugging
   </span>
   
 
@@ -381,11 +428,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../gap_fit_mpi/" class="md-nav__link">
+      <a href="../gap_fit_mpi/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    [Protected] Gap Fit with MPI
+    Gap Fit with MPI
   </span>
   
 
@@ -400,11 +447,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../newmembers/" class="md-nav__link">
+      <a href="../newmembers/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    [Protected] Information for new group members
+    Information for new group members
   </span>
   
 
@@ -419,11 +466,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../nodes/" class="md-nav__link">
+      <a href="../nodes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    [Protected] Dedicated Nodes
+    Dedicated Nodes
   </span>
   
 
@@ -438,11 +485,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../poster/" class="md-nav__link">
+      <a href="../poster/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    [Protected] Poster
+    Poster
   </span>
   
 
@@ -457,11 +504,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../sharedTips_header/" class="md-nav__link">
+      <a href="../sharedTips_header/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    [Protected] Shared Tips & Guidance
+    Shared Tips & Guidance
   </span>
   
 
@@ -476,11 +523,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../travel/" class="md-nav__link">
+      <a href="../travel/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    [Protected] Travel
+    Travel
   </span>
   
 
@@ -495,11 +542,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../wiki/" class="md-nav__link">
+      <a href="../wiki/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    [Protected] Wiki
+    Wiki
   </span>
   
 
@@ -548,11 +595,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../ACE/" class="md-nav__link">
+      <a href="../ACE/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    [Protected] ACE Descriptor evaluation in Python
+    ACE Descriptor evaluation in Python
   </span>
   
 
@@ -609,11 +656,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../FPS/user-guide/" class="md-nav__link">
+      <a href="../FPS/user-guide/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    [Protected] FPS: Furthest Point Search
+    FPS: Furthest Point Search
   </span>
   
 
@@ -634,19 +681,17 @@
       
   
   
-    
-  
   
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_17" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_17" >
         
           <label class="md-nav__link" for="__nav_17" id="__nav_17_label" tabindex="0">
             
@@ -659,7 +704,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_17_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_17_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_17">
             <span class="md-nav__icon md-icon"></span>
             GAP
@@ -670,19 +715,17 @@
                 
   
   
-    
-  
   
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_17_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_17_1" >
         
           <label class="md-nav__link" for="__nav_17_1" id="__nav_17_1_label" tabindex="0">
             
@@ -695,7 +738,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_17_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_17_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_17_1">
             <span class="md-nav__icon md-icon"></span>
             SOAPs
@@ -706,71 +749,17 @@
                 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    [Protected] Sparse Points:
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../GAP/SOAPs/user-guide/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    [Protected] Sparse Points:
+    Sparse Points:
   </span>
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#assigning-them-back-to-structures" class="md-nav__link">
-    Assigning Them Back to Structures
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#how-it-works" class="md-nav__link">
-    How It Works
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -831,7 +820,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../SharedTips/AtomModel_tips/" class="md-nav__link">
+      <a href="../SharedTips/AtomModel_tips/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -851,7 +840,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../SharedTips/DFT_tips/" class="md-nav__link">
+      <a href="../SharedTips/DFT_tips/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -871,7 +860,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../SharedTips/MLIP_tips/" class="md-nav__link">
+      <a href="../SharedTips/MLIP_tips/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -932,7 +921,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../scripts/" class="md-nav__link">
+      <a href="../scripts/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1027,7 +1016,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../trajectory-analysis/chains/user-guide/" class="md-nav__link">
+      <a href="../trajectory-analysis/chains/user-guide/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1083,15 +1072,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#assigning-them-back-to-structures" class="md-nav__link">
-    Assigning Them Back to Structures
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#how-it-works" class="md-nav__link">
-    How It Works
+  <a href="#building-on-scrtp-nodes" class="md-nav__link">
+    Building on SCRTP nodes
   </a>
   
 </li>
@@ -1114,7 +1096,7 @@
   
 
 
-<div id="mkdocs-encrypted-content" style="display:none">9LOxNlvsOp9dOO7S1GznWw==;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;^</div>
+<div id="mkdocs-encrypted-content" style="display:none">zjfqRqrDcZp1baxCgoTVFQ==;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;^</div>
 <div id="mkdocs-decrypted-content">
     <form id="mkdocs-decrypt-form">
         <h1>This content is protected with AES encryption. </h1>
@@ -1126,7 +1108,7 @@
 </div>
 
 <script type="text/javascript">
-var encryptcontent_path = "GAP/SOAPs/user-guide/";
+var encryptcontent_path = "build_lammps/";
 var decryption_failure_message = "Invalid password.";
 </script>
 
@@ -1135,7 +1117,7 @@ var decryption_failure_message = "Invalid password.";
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/cipher-core.js"></script>
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/md5.js"></script>
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/aes.js"></script>
-<script type="text/javascript" src="../../../assets/javascripts/decrypt-contents.js" defer></script>
+<script type="text/javascript" src="../assets/javascripts/decrypt-contents.js" defer></script>
 
 
 
@@ -1174,10 +1156,10 @@ var decryption_failure_message = "Invalid password.";
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.dff1b7c8.min.js"></script>
+      <script src="../assets/javascripts/bundle.dff1b7c8.min.js"></script>
       
     
   </body>
