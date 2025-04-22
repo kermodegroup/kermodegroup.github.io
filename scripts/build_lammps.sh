@@ -15,6 +15,8 @@ cmake --build . -j 40
 ​
 cmake --install .
 ​
+make install-python
+
 cd ..
 ​
 rm -r -d build
